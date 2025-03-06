@@ -1,10 +1,12 @@
 export default function Card({people}) {
     return (
         <div className="card-container">
-            <p>Name: {people.name}</p>
-            <p>Gender: {people.gender}</p>
-            <p className="hobby">{people.hobby}</p>
             <img src={people.image.src} alt={people.image.alt} />
+            <div className="detail">
+                <p className="name">{people.name}</p>
+                <p className="gender">{people.gender}</p>
+            </div>
+            <p className="hobby">{people.hobby}</p>
         </div>
     );
 }

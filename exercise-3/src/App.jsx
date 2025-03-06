@@ -18,8 +18,8 @@ function App() {
     <div id="app">
       <h1>PNV Team !!</h1>
       <p>Here are some PNV trainers and educators, do you know them?</p>
-      {ALL_PNV_TEACHERS.map(obj => {
-        return <User user={obj}/>  
+      {ALL_PNV_TEACHERS.map((obj, index) => {
+        return <User user={obj} key={index}/>  
       })}
     </div>
   );

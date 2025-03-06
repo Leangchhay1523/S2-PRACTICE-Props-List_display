@@ -28,8 +28,8 @@ function App() {
     <div id="app">
       <h1>PNV React Team !!</h1>
       <p>Here are some PNV React masters, do you know them?</p>
-      <User userData={vinhData}/> {/* This line needs some changes*/}
-      <User userData={myData}/> {/* This line needs some changes*/}
+      <User userData={vinhData}/>
+      <User userData={myData}/>
     </div>
   );
 }
